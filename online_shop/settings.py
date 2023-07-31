@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 
 ]
 
@@ -138,3 +139,8 @@ INTERNAL_IPS = [
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51NY2JuDaOjA7OvR4RbOoeJdRCa8w7Yy5PZ44R6JX5FHvVCjw594xU4D30tLjteHrAGde204ww9J88ZVLCZgABJeO009tiA2Thy'
+STRIPE_SECRET_KEY = 'sk_test_51NY2JuDaOjA7OvR4TSEabp4XdeHP5XEWEsy3Ei4CqgMiV8ZBsLDXRRNRyjEGCOCMREMRRfOsvIAoQS5n2Ejl1j2h00AmBywap8'
+STRIPE_API_VERSION = '2022-08-01'
+STRIPE_WEBHOOK_SECRET = 'whsec_a9e8233cd5dbab7182e227823f30c8532f4b6e3b77f7b871624678a571bf1e40'
