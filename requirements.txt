@@ -7,3 +7,4 @@ celery==5.3.1
 django-debug-toolbar==4.1.0
 stripe==5.5.0
 WeasyPrint==59.0
+redis==4.6.0
